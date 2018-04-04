@@ -1,0 +1,14 @@
+<div >
+  <div class="card">
+    <div class="card-header">
+      {{que.text}}
+      <a href="#" class="btn btn-link" (click)="que.hide=!que.hide">Show</a> | <a href="#" class="btn btn-danger" (click)="removeQuestion(que)">remove</a>
+    </div>
+    <div class="card-block" [hidden]="que.hide">
+      <p class="card-text">
+        {{que.ans}}
+      </p>
+    </div>
+  </div>
+  <br>
+</div>
